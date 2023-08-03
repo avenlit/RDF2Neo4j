@@ -1,0 +1,1679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#belongs_to">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<owl:inverseOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#consists_of"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#conduct">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<owl:inverseOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_conducted"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople"/>
+	<rdfs:range rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#consists_of">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#from_table">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity"/>
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address"/>
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank"/>
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer"/>
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople"/>
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization"/>
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product"/>
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop"/>
+	<rdfs:range rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#hold">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<owl:inverseOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_hold"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople"/>
+	<rdfs:range rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_conducted">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity"/>
+	<rdfs:range rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_hold">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop"/>
+	<rdfs:range rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_used">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<owl:inverseOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#use"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard"/>
+	<rdfs:range rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer"/>
+	<rdfs:range rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#use">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer"/>
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople"/>
+	<rdfs:range rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_card_bal">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:nodeID="node1h6t5rovix1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_conducted"/>
+	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity">
+	<rdfs:subClassOf rdf:nodeID="node1h6t5rovix2"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix2">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_conducted"/>
+	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity">
+	<rdfs:comment>行为</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_etl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_etl_dt">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_etl"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts_delay">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_due">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_first">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_amt_mth">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_amt_year">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_cnt_mth">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_cnt_year">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_book">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_contract">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdfs:comment>合同明细</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_djk">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdfs:comment>贷记卡</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_dsf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdfs:comment>第三方交易</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_duebill">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdfs:comment>借据明细</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_etc">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdfs:comment>ETC交易</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_etl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_grwy">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdfs:comment>个人网银</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_gzdf">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdfs:comment>工资代发</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_huanb">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdfs:comment>贷款还本</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_huanx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdfs:comment>贷款还息</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan_refe">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_sa">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdfs:comment>活期交易</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_sbyb">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdfs:comment>社保医保交易</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_sdrq">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdfs:comment>水电燃气</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_sjyh">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:comment>地址</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address_latitude">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address_longitude">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:nodeID="node1h6t5rovix3"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix3">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_hold"/>
+	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank">
+	<rdfs:comment>银行</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank"/>
+	<rdfs:subClassOf rdf:nodeID="node1h6t5rovix4"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix4">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_used"/>
+	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_avg">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard"/>
+	<rdfs:comment>余额</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_cloud_flash">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_sts">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_no">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_loan">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_loan_online_bal">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_loan"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_lone_all_bal">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_loan"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_type">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_interests">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan_acct">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan_amt">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:nodeID="node1h6t5rovix5"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix5">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#conduct"/>
+	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer">
+	<rdfs:subClassOf rdf:nodeID="node1h6t5rovix6"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix6">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#use"/>
+	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer">
+	<rdfs:comment>客户</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer"/>
+	<owl:disjointWith rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_car">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info"/>
+	<owl:disjointWith rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_userid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_phone">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_userid">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_type">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_type_user">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_contract_mx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_djk_mx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_dsf_mx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_duebill_mx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_gzdf_mx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_huanb_mx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_huanx_mx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sa_mx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sbyb_mx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sdrq_mx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sjyh_mx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#engage_type">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:nodeID="node1h6t5rovix7"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix7">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#conduct"/>
+	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople">
+	<rdfs:subClassOf rdf:nodeID="node1h6t5rovix8"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix8">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#hold"/>
+	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople">
+	<rdfs:subClassOf rdf:nodeID="node1h6t5rovix9"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix9">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#hold"/>
+	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople">
+	<rdfs:subClassOf rdf:nodeID="node1h6t5rovix10"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix10">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#hold"/>
+	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_idnum">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_mobphone">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_type">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_type_legal">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_type_recom">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:nodeID="node1h6t5rovix11"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix11">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#conduct"/>
+	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization">
+	<rdfs:subClassOf rdf:nodeID="node1h6t5rovix12"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix12">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_hold"/>
+	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_creator">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_crt_ts">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_end_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_date"/>
+	<owl:disjointWith rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_start_date"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_info">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_org_no">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_start_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_date"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_updater">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_upt_ts">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:nodeID="node1h6t5rovix13"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix13">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#belongs_to"/>
+	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product">
+	<rdfs:subClassOf rdf:nodeID="node1h6t5rovix14"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix14">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_used"/>
+	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product">
+	<rdfs:comment>产品</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info_full_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info_name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info_no">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info_short_nama">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info_name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_type">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_type_no">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_type_type">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:nodeID="node1h6t5rovix15"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix15">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#consists_of"/>
+	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop">
+	<rdfs:subClassOf rdf:nodeID="node1h6t5rovix16"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix16">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_hold"/>
+	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop">
+	<rdfs:comment>商户</rdfs:comment>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_certificate">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_cynx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_certificate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_add">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_reg_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_uid">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts_class_mth">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts_class_year">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_type">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_yyzz">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_certificate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#acct_no">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_userid"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info"/>
+	<rdf:type rdf:nodeID="node1h6t5rovix17"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix17">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#belongs_to"/>
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+	<owl:onClass rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#acct_no">
+	<rdf:type rdf:nodeID="node1h6t5rovix18"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix18">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#belongs_to"/>
+	<owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+	<owl:onClass rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#active_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_first"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#all_dep_bal">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#all_loan_bal">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_lone_all_bal"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bal">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#band_acct">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#band_acct_owner">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_name"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#band_card_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_date"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#band_card_no">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_no"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bankacct">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan_refe"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_no"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bankacct_bal">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan_refe"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bankacct_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_due"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan_refe"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#belong_org">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_org_no"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bnqx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_interests"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan_amt"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#book_channel">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_book"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#book_emp">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_book"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_idnum"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#book_emp_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_book"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#book_org">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_book"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_org_no"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bwqx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_interests"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan_amt"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_color">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_car"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_model">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_car"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_no">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_avg_mth">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_avg"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_avg_year">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_avg"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_bal">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_no">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_no"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_sts">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_sts"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_sts_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_sts"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_sts_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_sts"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#class_mth">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts_class_mth"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#class_year">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts_class_year"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#clsd_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_due"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#code_value_refe">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan_refe"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#conces_amt">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_etc"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#credit_limit">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan_amt"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_name"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_no">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_userid"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cynx">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_cynx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#days">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#delay_bal">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts_delay"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan_amt"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#delay_begin_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts_delay"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_first"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#delay_max_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts_delay"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_due"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#delay_num">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts_delay"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#deposit">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkje">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan_amt"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkwjfl">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+	<owl:sameAs rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#five_class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkzh">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan_acct"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dlay_amt">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts_delay"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dlay_mths">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts_delay"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#ebank_cust_no">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_no"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#engage_type">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#engage_type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#entp_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etc_acct">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_no"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx"/>
+	<rdf:type rdf:nodeID="node1h6t5rovix19"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix19">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+	<owl:onProperty rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#belongs_to"/>
+	<owl:someValuesFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etc_acct_type">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_no"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etc_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etl_dt">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#five_class">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_loan"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#flag">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_interests"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#ifjiejiuhuanxin">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan_refe"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#in_clsd_dt_n">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_due"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan_refe"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#in_due_dt_n">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_due"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#in_frst_alfd_dt_n">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_first"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_cloud_flash">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_cloud_flash"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_dafeng">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_deposit">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_sts"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+	<owl:differentFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_purchase"/>
+	<owl:differentFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_transfer"/>
+	<owl:differentFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_withdrw"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_etc">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_inter_card">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_mob_bank">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_purchase">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_sts"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+	<owl:differentFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_transfer"/>
+	<owl:differentFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_withdrw"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_transfer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_sts"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+	<owl:differentFrom rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_withdrw"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_withdrw">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_sts"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#issue_mode">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#issue_mode_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#last_tran_dt">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#latitude">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address_latitude"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legal_idnum">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_idnum"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legal_mob_phone">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_mobphone"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legal_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#longitude">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address_longitude"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mge_org">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_org_no"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mge_org_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mgr_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mgr_no">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_idnum"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mob_bank_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mob_phone">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_phone"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#online_loan_bal">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_loan_online_bal"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#open_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_date"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#open_teller_no">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_idnum"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#over_draft">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts_delay"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#prod_code">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info_no"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#prod_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info_name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#real_amt">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_etc"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_name"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_type_recom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_no">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_idnum"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_type_recom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_org">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_org_no"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_org_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_abbreviation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_add">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_add"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_reg_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_reg_date"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_type">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#sign_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_amt_fen">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_etc"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_amt_mth">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_amt_mth"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_amt_year">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_amt_year"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_cnt_mth">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_cnt_mth"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_cnt_year">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_cnt_year"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_etc"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_place">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_etc"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_time">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_etc"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#uid">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_userid"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#uid_shop">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_uid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#user_code">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_userid"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#xtly">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#yyzz">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_yyzz"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix20">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+	<owl:members rdf:nodeID="node1h6t5rovix21"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix21">
+	<rdf:first rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_creator"/>
+	<rdf:rest rdf:nodeID="node1h6t5rovix22"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix22">
+	<rdf:first rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_crt_ts"/>
+	<rdf:rest rdf:nodeID="node1h6t5rovix23"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix23">
+	<rdf:first rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_updater"/>
+	<rdf:rest rdf:nodeID="node1h6t5rovix24"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t5rovix24">
+	<rdf:first rdf:resource="http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_upt_ts"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+</rdf:RDF>
