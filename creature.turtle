@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#吃">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<owl:inverseOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#被吃"/>
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#虎"/>
+	<rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#鹿"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#居住在">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#被吃">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#鹿"/>
+	<rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#虎"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#高度">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#两栖动物">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#动物"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#动物">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#地点">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#微生物">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#植物">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#水生动物">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#动物"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#海">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#地点"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#种子植物">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#植物"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#空">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#地点"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#苔类植物">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#苔藓植物"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#苔藓植物">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#植物"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#虎">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#陆生动物"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#陆">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#地点"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#陆生动物">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#动物"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#鹿">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#陆生动物"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#东北虎">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#虎"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#北方">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#陆"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#太平洋">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#海"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#幼鹿">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#鹿"/>
+	<被吃 rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#东北虎"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#苹果树">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#种子植物"/>
+	<居住在 rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#北方"/>
+	<高度>3米</高度>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#鲸鱼">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+	<rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#水生动物"/>
+	<居住在 rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#太平洋"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t3ur29x1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+	<owl:members rdf:nodeID="node1h6t3ur29x2"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t3ur29x2">
+	<rdf:first rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#海"/>
+	<rdf:rest rdf:nodeID="node1h6t3ur29x3"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t3ur29x3">
+	<rdf:first rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#空"/>
+	<rdf:rest rdf:nodeID="node1h6t3ur29x4"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1h6t3ur29x4">
+	<rdf:first rdf:resource="http://www.semanticweb.org/user/ontologies/2021/0/untitled-ontology-49#陆"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+</rdf:RDF>
