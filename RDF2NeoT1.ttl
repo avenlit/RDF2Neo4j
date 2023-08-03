@@ -1,0 +1,924 @@
+@prefix : <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2> a owl:Ontology .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#belongs_to> a owl:ObjectProperty ;
+	owl:inverseOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#consists_of> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#conduct> a owl:ObjectProperty ;
+	owl:inverseOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_conducted> ;
+	rdfs:domain <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople> ;
+	rdfs:range <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#consists_of> a owl:ObjectProperty .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#from_table> a owl:ObjectProperty ;
+	rdfs:domain <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop> ;
+	rdfs:range <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#hold> a owl:ObjectProperty ;
+	owl:inverseOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_hold> ;
+	rdfs:domain <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople> ;
+	rdfs:range <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_conducted> a owl:ObjectProperty ;
+	rdfs:domain <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity> ;
+	rdfs:range <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_hold> a owl:ObjectProperty ;
+	rdfs:domain <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop> ;
+	rdfs:range <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_used> a owl:ObjectProperty ;
+	owl:inverseOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#use> ;
+	rdfs:domain <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard> ;
+	rdfs:range <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#use> a owl:ObjectProperty ;
+	rdfs:domain <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople> ;
+	rdfs:range <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_card_bal> a owl:DatatypeProperty .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity> a owl:Class ;
+	rdfs:subClassOf _:node1h6t1nqgux1 .
+
+_:node1h6t1nqgux1 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_conducted> ;
+	owl:someValuesFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity> rdfs:subClassOf _:node1h6t1nqgux2 .
+
+_:node1h6t1nqgux2 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_conducted> ;
+	owl:someValuesFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity> rdfs:comment "行为" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_etl> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_etl_dt> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_etl> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts_delay> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_due> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_first> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_amt_mth> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_amt_year> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_cnt_mth> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_cnt_year> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_book> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_contract> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> ;
+	rdfs:comment "合同明细" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_djk> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> ;
+	rdfs:comment "贷记卡" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_dsf> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> ;
+	rdfs:comment "第三方交易" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_duebill> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> ;
+	rdfs:comment "借据明细" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_etc> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> ;
+	rdfs:comment "ETC交易" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_etl> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_grwy> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> ;
+	rdfs:comment "个人网银" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_gzdf> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> ;
+	rdfs:comment "工资代发" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_huanb> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> ;
+	rdfs:comment "贷款还本" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_huanx> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> ;
+	rdfs:comment "贷款还息" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan_refe> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_sa> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> ;
+	rdfs:comment "活期交易" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_sbyb> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> ;
+	rdfs:comment "社保医保交易" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_sdrq> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> ;
+	rdfs:comment "水电燃气" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_sjyh> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address> a owl:Class ;
+	rdfs:comment "地址" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address_latitude> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address_longitude> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank> a owl:Class ;
+	rdfs:subClassOf _:node1h6t1nqgux3 .
+
+_:node1h6t1nqgux3 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_hold> ;
+	owl:someValuesFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank> rdfs:comment "银行" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank> , _:node1h6t1nqgux4 .
+
+_:node1h6t1nqgux4 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_used> ;
+	owl:someValuesFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_avg> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard> ;
+	rdfs:comment "余额" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_cloud_flash> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_sts> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_date> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_no> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_loan> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_loan_online_bal> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_loan> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_lone_all_bal> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_loan> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_type> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_interests> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan_acct> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan_amt> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer> a owl:Class ;
+	rdfs:subClassOf _:node1h6t1nqgux5 .
+
+_:node1h6t1nqgux5 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#conduct> ;
+	owl:someValuesFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer> rdfs:subClassOf _:node1h6t1nqgux6 .
+
+_:node1h6t1nqgux6 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#use> ;
+	owl:someValuesFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer> rdfs:comment "客户" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer> ;
+	owl:disjointWith <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_type> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_car> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_name> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info> ;
+	owl:disjointWith <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_userid> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_phone> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_userid> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_type> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_type_user> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_type> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_contract_mx> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_djk_mx> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_dsf_mx> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_duebill_mx> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_gzdf_mx> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_huanb_mx> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_huanx_mx> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sa_mx> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sbyb_mx> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sdrq_mx> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sjyh_mx> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#engage_type> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople> a owl:Class ;
+	rdfs:subClassOf _:node1h6t1nqgux7 .
+
+_:node1h6t1nqgux7 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#conduct> ;
+	owl:someValuesFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople> rdfs:subClassOf _:node1h6t1nqgux8 .
+
+_:node1h6t1nqgux8 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#hold> ;
+	owl:someValuesFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople> rdfs:subClassOf _:node1h6t1nqgux9 .
+
+_:node1h6t1nqgux9 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#hold> ;
+	owl:someValuesFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople> rdfs:subClassOf _:node1h6t1nqgux10 .
+
+_:node1h6t1nqgux10 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#hold> ;
+	owl:someValuesFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_idnum> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_mobphone> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_name> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_type> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_type_legal> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_type> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_type_recom> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_type> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization> a owl:Class ;
+	rdfs:subClassOf _:node1h6t1nqgux11 .
+
+_:node1h6t1nqgux11 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#conduct> ;
+	owl:someValuesFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization> rdfs:subClassOf _:node1h6t1nqgux12 .
+
+_:node1h6t1nqgux12 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_hold> ;
+	owl:someValuesFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_creator> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_crt_ts> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_date> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_end_date> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_date> ;
+	owl:disjointWith <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_start_date> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_info> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_name> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_org_no> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_start_date> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_date> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_updater> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_upt_ts> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product> a owl:Class ;
+	rdfs:subClassOf _:node1h6t1nqgux13 .
+
+_:node1h6t1nqgux13 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#belongs_to> ;
+	owl:someValuesFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product> rdfs:subClassOf _:node1h6t1nqgux14 .
+
+_:node1h6t1nqgux14 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_used> ;
+	owl:someValuesFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product> rdfs:comment "产品" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info_full_name> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info_name> ;
+	owl:disjointWith <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info_short_nama> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info_name> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info_no> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info_short_nama> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info_name> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_type> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product> ;
+	owl:disjointWith owl:Thing .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_type_no> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_type> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_type_type> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_type> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop> a owl:Class ;
+	rdfs:subClassOf _:node1h6t1nqgux15 .
+
+_:node1h6t1nqgux15 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#consists_of> ;
+	owl:someValuesFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop> rdfs:subClassOf _:node1h6t1nqgux16 .
+
+_:node1h6t1nqgux16 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_hold> ;
+	owl:someValuesFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop> rdfs:comment "商户" .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_certificate> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_cynx> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_certificate> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop> ;
+	owl:disjointWith <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_type> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_add> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_name> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_reg_date> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_uid> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts_class_mth> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts_class_year> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_type> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_yyzz> a owl:Class ;
+	rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_certificate> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> a owl:Class .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#acct_no> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_userid> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> , _:node1h6t1nqgux17 .
+
+_:node1h6t1nqgux17 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#belongs_to> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#acct_no> a _:node1h6t1nqgux18 .
+
+_:node1h6t1nqgux18 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#belongs_to> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#active_date> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_first> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#all_dep_bal> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#all_loan_bal> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_lone_all_bal> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bal> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#band_acct> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#band_acct_owner> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_name> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#band_card_date> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_date> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#band_card_no> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_no> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bankacct> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan_refe> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_no> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bankacct_bal> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan_refe> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bankacct_date> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_due> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan_refe> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#belong_org> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_org_no> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bnqx> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_interests> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan_amt> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#book_channel> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_book> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#book_emp> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_book> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_idnum> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#book_emp_name> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_book> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_name> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#book_org> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_book> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_org_no> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bwqx> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_interests> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan_amt> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_color> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_car> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_model> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_car> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_no> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_avg_mth> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_avg> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_avg_year> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_avg> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_bal> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_no> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_no> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_sts> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_sts> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_sts_date> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_sts> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_sts_name> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_sts> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#class_mth> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts_class_mth> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#class_year> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts_class_year> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#clsd_date> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_due> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#code_value_refe> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan_refe> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#conces_amt> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_etc> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#credit_limit> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan_amt> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_name> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_name> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_no> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_userid> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cynx> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_cynx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#days> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#delay_bal> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts_delay> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan_amt> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#delay_begin_date> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts_delay> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_first> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#delay_max_date> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts_delay> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_due> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#delay_num> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts_delay> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#deposit> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkje> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan_amt> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkwjfl> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> ;
+	owl:sameAs <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#five_class> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkzh> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan_acct> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dlay_amt> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts_delay> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dlay_mths> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts_delay> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#ebank_cust_no> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_no> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#engage_type> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#engage_type> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#entp_name> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_name> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etc_acct> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_no> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> , _:node1h6t1nqgux19 .
+
+_:node1h6t1nqgux19 a owl:Restriction ;
+	owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#belongs_to> ;
+	owl:someValuesFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etc_acct_type> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_no> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etc_date> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etl_dt> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#five_class> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_loan> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#flag> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_interests> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#ifjiejiuhuanxin> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan_refe> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_loan> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#in_clsd_dt_n> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_due> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan_refe> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#in_due_dt_n> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_due> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#in_frst_alfd_dt_n> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time_first> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_loan> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_cloud_flash> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_cloud_flash> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_dafeng> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_type> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_deposit> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_sts> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> ;
+	owl:differentFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_purchase> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_transfer> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_withdrw> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_etc> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_inter_card> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_mob_bank> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_purchase> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_sts> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> ;
+	owl:differentFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_transfer> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_withdrw> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_transfer> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_sts> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> ;
+	owl:differentFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_withdrw> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_withdrw> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature_sts> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#issue_mode> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#issue_mode_name> a owl:NamedIndividual .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#last_tran_dt> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#latitude> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address_latitude> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legal_idnum> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_idnum> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legal_mob_phone> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_mobphone> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legal_name> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_name> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#longitude> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address_longitude> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mge_org> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_org_no> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mge_org_name> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_name> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mgr_name> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_name> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mgr_no> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_idnum> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mob_bank_date> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_feature> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mob_phone> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_phone> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#online_loan_bal> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_loan_online_bal> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#open_date> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_info_date> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#open_teller_no> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_idnum> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#over_draft> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_sts_delay> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bank_bankcard_bal> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#prod_code> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info_no> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#prod_name> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#product_info_name> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#real_amt> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_etc> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_name> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_name> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_type_recom> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_no> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_idnum> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_type_recom> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_org> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_org_no> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_org_name> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_abbreviation> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_name> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_add> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_add> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_name> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_name> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_reg_date> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_reg_date> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_type> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_type> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#sign_date> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_amt_fen> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_etc> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_amt_mth> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_amt_mth> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_amt_year> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_amt_year> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_cnt_mth> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_cnt_mth> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_tran> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_cnt_year> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_cnt_year> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_date> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_etc> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_place> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_etc> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#address> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_time> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_time> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_etc> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#uid> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_userid> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#uid_shop> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_uid> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#user_code> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#customer_info_userid> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#xtly> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#yyzz> a owl:NamedIndividual , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> , <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_yyzz> .
+
+_:node1h6t1nqgux20 a owl:AllDisjointClasses ;
+	owl:members _:node1h6t1nqgux21 .
+
+_:node1h6t1nqgux21 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_amt_mth> ;
+	rdf:rest _:node1h6t1nqgux22 .
+
+_:node1h6t1nqgux22 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_amt_year> ;
+	rdf:rest _:node1h6t1nqgux23 .
+
+_:node1h6t1nqgux23 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_cnt_mth> ;
+	rdf:rest _:node1h6t1nqgux24 .
+
+_:node1h6t1nqgux24 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_tran_cnt_year> ;
+	rdf:rest _:node1h6t1nqgux25 .
+
+_:node1h6t1nqgux25 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type> ;
+	rdf:rest rdf:nil .
+
+_:node1h6t1nqgux26 a owl:AllDisjointClasses ;
+	owl:members _:node1h6t1nqgux27 .
+
+_:node1h6t1nqgux27 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_contract> ;
+	rdf:rest _:node1h6t1nqgux28 .
+
+_:node1h6t1nqgux28 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_djk> ;
+	rdf:rest _:node1h6t1nqgux29 .
+
+_:node1h6t1nqgux29 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_dsf> ;
+	rdf:rest _:node1h6t1nqgux30 .
+
+_:node1h6t1nqgux30 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_duebill> ;
+	rdf:rest _:node1h6t1nqgux31 .
+
+_:node1h6t1nqgux31 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_etc> ;
+	rdf:rest _:node1h6t1nqgux32 .
+
+_:node1h6t1nqgux32 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_grwy> ;
+	rdf:rest _:node1h6t1nqgux33 .
+
+_:node1h6t1nqgux33 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_gzdf> ;
+	rdf:rest _:node1h6t1nqgux34 .
+
+_:node1h6t1nqgux34 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_huanb> ;
+	rdf:rest _:node1h6t1nqgux35 .
+
+_:node1h6t1nqgux35 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_huanx> ;
+	rdf:rest _:node1h6t1nqgux36 .
+
+_:node1h6t1nqgux36 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_sa> ;
+	rdf:rest _:node1h6t1nqgux37 .
+
+_:node1h6t1nqgux37 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_sbyb> ;
+	rdf:rest _:node1h6t1nqgux38 .
+
+_:node1h6t1nqgux38 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_sdrq> ;
+	rdf:rest _:node1h6t1nqgux39 .
+
+_:node1h6t1nqgux39 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#activity_type_sjyh> ;
+	rdf:rest rdf:nil .
+
+_:node1h6t1nqgux40 a owl:AllDisjointClasses ;
+	owl:members _:node1h6t1nqgux41 .
+
+_:node1h6t1nqgux41 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> ;
+	rdf:rest _:node1h6t1nqgux42 .
+
+_:node1h6t1nqgux42 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> ;
+	rdf:rest _:node1h6t1nqgux43 .
+
+_:node1h6t1nqgux43 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_contract_mx> ;
+	rdf:rest _:node1h6t1nqgux44 .
+
+_:node1h6t1nqgux44 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_djk_mx> ;
+	rdf:rest _:node1h6t1nqgux45 .
+
+_:node1h6t1nqgux45 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_dsf_mx> ;
+	rdf:rest _:node1h6t1nqgux46 .
+
+_:node1h6t1nqgux46 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_duebill_mx> ;
+	rdf:rest _:node1h6t1nqgux47 .
+
+_:node1h6t1nqgux47 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_gzdf_mx> ;
+	rdf:rest _:node1h6t1nqgux48 .
+
+_:node1h6t1nqgux48 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_huanb_mx> ;
+	rdf:rest _:node1h6t1nqgux49 .
+
+_:node1h6t1nqgux49 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_huanx_mx> ;
+	rdf:rest _:node1h6t1nqgux50 .
+
+_:node1h6t1nqgux50 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sa_mx> ;
+	rdf:rest _:node1h6t1nqgux51 .
+
+_:node1h6t1nqgux51 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sbyb_mx> ;
+	rdf:rest _:node1h6t1nqgux52 .
+
+_:node1h6t1nqgux52 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sdrq_mx> ;
+	rdf:rest _:node1h6t1nqgux53 .
+
+_:node1h6t1nqgux53 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sjyh_mx> ;
+	rdf:rest rdf:nil .
+
+_:node1h6t1nqgux54 a owl:AllDisjointClasses ;
+	owl:members _:node1h6t1nqgux55 .
+
+_:node1h6t1nqgux55 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_idnum> ;
+	rdf:rest _:node1h6t1nqgux56 .
+
+_:node1h6t1nqgux56 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_mobphone> ;
+	rdf:rest _:node1h6t1nqgux57 .
+
+_:node1h6t1nqgux57 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legalPeople_info_name> ;
+	rdf:rest rdf:nil .
+
+_:node1h6t1nqgux58 a owl:AllDisjointClasses ;
+	owl:members _:node1h6t1nqgux59 .
+
+_:node1h6t1nqgux59 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_creator> ;
+	rdf:rest _:node1h6t1nqgux60 .
+
+_:node1h6t1nqgux60 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_crt_ts> ;
+	rdf:rest _:node1h6t1nqgux61 .
+
+_:node1h6t1nqgux61 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_updater> ;
+	rdf:rest _:node1h6t1nqgux62 .
+
+_:node1h6t1nqgux62 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_upt_ts> ;
+	rdf:rest rdf:nil .
+
+_:node1h6t1nqgux63 a owl:AllDisjointClasses ;
+	owl:members _:node1h6t1nqgux64 .
+
+_:node1h6t1nqgux64 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_date> ;
+	rdf:rest _:node1h6t1nqgux65 .
+
+_:node1h6t1nqgux65 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_info> ;
+	rdf:rest _:node1h6t1nqgux66 .
+
+_:node1h6t1nqgux66 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#organization_org_no> ;
+	rdf:rest rdf:nil .
+
+_:node1h6t1nqgux67 a owl:AllDisjointClasses ;
+	owl:members _:node1h6t1nqgux68 .
+
+_:node1h6t1nqgux68 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_add> ;
+	rdf:rest _:node1h6t1nqgux69 .
+
+_:node1h6t1nqgux69 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_name> ;
+	rdf:rest _:node1h6t1nqgux70 .
+
+_:node1h6t1nqgux70 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_reg_date> ;
+	rdf:rest _:node1h6t1nqgux71 .
+
+_:node1h6t1nqgux71 rdf:first <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_info_uid> ;
+	rdf:rest rdf:nil .
