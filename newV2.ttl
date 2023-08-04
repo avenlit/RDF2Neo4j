@@ -1,0 +1,1514 @@
+@prefix : <http://www.semanticweb.org/13257/ontologies/2023/7/newV2#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/13257/ontologies/2023/7/newV2> .
+
+<http://www.semanticweb.org/13257/ontologies/2023/7/newV2> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> rdf:type owl:ObjectProperty ;
+                                                                              rdfs:comment "例如：银行账号是客户名称的依赖信息，客户名称为上层，银行/账号等为依赖信息" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#包含
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#包含> rdf:type owl:ObjectProperty ;
+                                                                            rdfs:comment "例如：银行账户管理（包含）多个银行卡号" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#等同于
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#等同于> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#ETC账号
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#ETC账号> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#账号类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易日期
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易日期> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#发生日期> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易笔数
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易笔数> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易类
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易类> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易金额
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易金额> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#产品代码
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#产品代码> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#产品名称
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#产品名称> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#人名称
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#人名称> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#信用额度
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#信用额度> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#功能日期
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#功能日期> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#起始日期> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#单位名称
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#单位名称> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构名称> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#发生日期
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#发生日期> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#商店名称
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#商店名称> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构名称> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#商户状态
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#商户状态> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构属性> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#地址
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#地址> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#地点类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#地点类
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#地点类> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#存款数额
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#存款数额> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#客户名称
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#客户名称> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#客户状态
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#客户状态> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#工号
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#工号> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证件号码> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#平均数额
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#平均数额> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#年均
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#年均> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#平均数额> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#开卡日期
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#开卡日期> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#起始日期> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#截止日期
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#截止日期> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#手机号码
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#手机号码> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#持有人名称
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#持有人名称> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#人名称> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#持续时间
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#持续时间> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#推荐人名称
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#推荐人名称> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#人名称> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数据日期
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数据日期> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#发生日期> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#最后一次时间
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#最后一次时间> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#发生日期> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#月均
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#月均> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#平均数额> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构代号
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构代号> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构号码> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构号码
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构号码> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构名称
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构名称> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构属性
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构属性> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构证号
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构证号> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构号码> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#欠息状态
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#欠息状态> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#欠本欠息日期
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#欠本欠息日期> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#起始日期> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#注册日期
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#注册日期> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#发生日期> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#渠道名称
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#渠道名称> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态名称
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态名称> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态日期
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态日期> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ;
+                                                                              rdfs:comment "卡片状态日期，不明白含义" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#管户人名称
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#管户人名称> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#人名称> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#绑定日期
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#绑定日期> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#起始日期> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#行为渠道
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#行为渠道> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#地点类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证件号码
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证件号码> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ;
+                                                                              rdfs:comment "自然人的号码" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证号
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证号> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证件号码> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#负责人名称
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#负责人名称> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#人名称> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#账号类
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#账号类> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#贷款
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#贷款> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#贷款日期
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#贷款日期> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#发生日期> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#贷款额度
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#贷款额度> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#起始日期
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#起始日期> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#路程
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#路程> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#地点类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#车主名称
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#车主名称> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#人名称> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#车牌号
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#车牌号> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#还款
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#还款> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#还款日期
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#还款日期> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#发生日期> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#透支数额
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#透支数额> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#逾期数额
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#逾期数额> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡分类
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡分类> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡状态> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡功能
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡功能> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡状态> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡号
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡号> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡状态
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡状态> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行状态
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行状态> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构属性> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行账户
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行账户> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#账号类> ,
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#包含> ;
+                                                                                                owl:someValuesFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡号>
+                                                                                              ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#acct_no
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#acct_no> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#账号类> ,
+                                                                                          <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行账户> ;
+                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_name> ;
+                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> ,
+                                                                                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> ;
+                                                                                 rdfs:comment "账号" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#active_date
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#active_date> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#功能日期> ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#起始日期> ;
+                                                                                     <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#all_dep_bal
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#all_dep_bal> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#存款数额> ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ;
+                                                                                     <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#all_loan_bal
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#all_loan_bal> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#贷款额度> ;
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> ;
+                                                                                      rdfs:comment "总存款" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bal
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bal> rdf:type owl:NamedIndividual ,
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#存款数额> ,
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ;
+                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#band_acct
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#band_acct> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#账号类> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行账户> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#band_acct_owner> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> ;
+                                                                                   rdfs:comment "绑定借记卡账户" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#band_acct_owner
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#band_acct_owner> rdf:type owl:NamedIndividual ,
+                                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#人名称> ,
+                                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> ,
+                                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#持有人名称> ;
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_name> ;
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#band_card_date
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#band_card_date> rdf:type owl:NamedIndividual ,
+                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ,
+                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#绑定日期> ,
+                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#起始日期> ;
+                                                                                        <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#band_card_no
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#band_card_no> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡号> ;
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> ;
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#等同于> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bankacct> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bankacct
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bankacct> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡号> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> ;
+                                                                                  rdfs:comment "绑定还款账号" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bankacct_bal
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bankacct_bal> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#存款数额> ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ;
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bankacct_date
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bankacct_date> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#发生日期> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#还款日期> ;
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#belong_org
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#belong_org> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构代号> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构号码> ;
+                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> ,
+                                                                                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bnqx
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bnqx> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#欠息状态> ,
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ;
+                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#book_channel
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#book_channel> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#地点类> ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#行为渠道> ;
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etc_acct> ;
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#book_emp
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#book_emp> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#工号> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证件号码> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#book_emp_name> ,
+                                                                                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etc_acct> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#book_emp_name
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#book_emp_name> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#人名称> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#负责人名称> ;
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#book_org
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#book_org> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构代号> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构号码> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etc_acct> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bwqx
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#bwqx> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#欠息状态> ,
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ;
+                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_color
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_color> rdf:type owl:NamedIndividual ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_no> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_model
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_model> rdf:type owl:NamedIndividual ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_no> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_no
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_no> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#车牌号> ;
+                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_name> ;
+                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> ,
+                                                                                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_sts
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_sts> rdf:type owl:NamedIndividual ;
+                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_no> ;
+                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_type
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_type> rdf:type owl:NamedIndividual ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_no> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_avg_mth
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_avg_mth> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#平均数额> ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#月均> ;
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> ;
+                                                                                      rdfs:comment "绑卡月日均" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_avg_year
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_avg_year> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#平均数额> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#年均> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ;
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> ;
+                                                                                       rdfs:comment "绑卡年日均" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_bal
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_bal> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#存款数额> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> ;
+                                                                                  rdfs:comment "绑卡时点余额" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_no
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_no> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                          <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡号> ;
+                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_name> ;
+                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> ,
+                                                                                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> ;
+                                                                                 rdfs:comment "卡号" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_sts
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_sts> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡状态> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_sts_date
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_sts_date> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态日期> ;
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_sts_name
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#card_sts_name> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态名称> ;
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#class_mth
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#class_mth> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#商户状态> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构属性> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#class_year
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#class_year> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#商户状态> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构属性> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ;
+                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#clsd_date
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#clsd_date> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#截止日期> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#code_value_refe
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#code_value_refe> rdf:type owl:NamedIndividual ,
+                                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易类> ,
+                                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#还款> ;
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#conces_amt
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#conces_amt> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易金额> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ;
+                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#credit_limit
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#credit_limit> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#信用额度> ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ;
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_name
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_name> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#客户名称> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> ,
+                                                                                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> ,
+                                                                                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> ,
+                                                                                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> ,
+                                                                                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> ;
+                                                                                   rdfs:comment "客户名称" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_no
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_no> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                          <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证件号码> ,
+                                                                                          <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证号> ;
+                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_name> ;
+                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> ;
+                                                                                 rdfs:comment "客户编号" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_sts
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_sts> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#客户状态> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etc_acct> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cynx
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cynx> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#持续时间> ,
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ;
+                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#days
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#days> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#持续时间> ,
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ;
+                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#del_flag
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#del_flag> rdf:type owl:NamedIndividual ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#delay_bal
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#delay_bal> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#逾期数额> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#delay_begin_date
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#delay_begin_date> rdf:type owl:NamedIndividual ,
+                                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易类> ;
+                                                                                          <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#delay_max_date
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#delay_max_date> rdf:type owl:NamedIndividual ,
+                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#截止日期> ,
+                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ;
+                                                                                        <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#delay_num
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#delay_num> rdf:type owl:NamedIndividual ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#deposit
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#deposit> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#存款数额> ,
+                                                                                          <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ;
+                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> ;
+                                                                                 rdfs:comment "贷记卡存款" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkje
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkje> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ,
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#贷款额度> ;
+                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkwjfl
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkwjfl> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ,
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡分类> ,
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡状态> ;
+                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkzh
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkzh> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#账号类> ,
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行账户> ;
+                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> ;
+                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#等同于> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#acct_no> ;
+                                                                              rdfs:comment "贷款账号" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dlay_amt
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dlay_amt> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#逾期数额> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dlay_mths
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dlay_mths> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#持续时间> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> rdf:type owl:NamedIndividual ,
+                                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> rdf:type owl:NamedIndividual ,
+                                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> rdf:type owl:NamedIndividual ,
+                                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> rdf:type owl:NamedIndividual ,
+                                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_contract_mx
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_contract_mx> rdf:type owl:NamedIndividual ,
+                                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_djk_mx
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_djk_mx> rdf:type owl:NamedIndividual ,
+                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_dsf_mx
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_dsf_mx> rdf:type owl:NamedIndividual ,
+                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_duebill_mx
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_duebill_mx> rdf:type owl:NamedIndividual ,
+                                                                                                     <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> rdf:type owl:NamedIndividual ,
+                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_gzdf_mx
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_gzdf_mx> rdf:type owl:NamedIndividual ,
+                                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_huanb_mx
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_huanb_mx> rdf:type owl:NamedIndividual ,
+                                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_huanx_mx
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_huanx_mx> rdf:type owl:NamedIndividual ,
+                                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sa_mx
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sa_mx> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sbyb_mx
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sbyb_mx> rdf:type owl:NamedIndividual ,
+                                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sdrq_mx
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sdrq_mx> rdf:type owl:NamedIndividual ,
+                                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sjyh_mx
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_sjyh_mx> rdf:type owl:NamedIndividual ,
+                                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#table> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#ebank_cust_no
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#ebank_cust_no> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证件号码> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证号> ;
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#acct_no> ,
+                                                                                                                                                                     <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_name> ,
+                                                                                                                                                                     <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#uid> ;
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#engage_type
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#engage_type> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#商户状态> ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构属性> ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ;
+                                                                                     <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#entp_name
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#entp_name> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#单位名称> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构名称> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etc_acct
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etc_acct> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#ETC账号> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#账号类> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_name> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> ,
+                                                                                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etc_acct_type
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etc_acct_type> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡分类> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡状态> ;
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etc_acct> ;
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etc_date
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etc_date> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#功能日期> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#起始日期> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etl_dt
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etl_dt> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#发生日期> ,
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数据日期> ,
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ;
+                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> ,
+                                                                                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> ,
+                                                                                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> ,
+                                                                                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> ,
+                                                                                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> ,
+                                                                                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#five_class
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#five_class> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡分类> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡状态> ;
+                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#flag
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#flag> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#欠息状态> ,
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ;
+                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#ifjiejiuhuanxin
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#ifjiejiuhuanxin> rdf:type owl:NamedIndividual ,
+                                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#欠息状态> ,
+                                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ;
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#in_clsd_dt_n
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#in_clsd_dt_n> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#截止日期> ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ;
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#in_due_dt_n
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#in_due_dt_n> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#截止日期> ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ;
+                                                                                     <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#in_frst_alfd_dt_n
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#in_frst_alfd_dt_n> rdf:type owl:NamedIndividual ,
+                                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#发生日期> ,
+                                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ,
+                                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#贷款日期> ;
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_cloud_flash
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_cloud_flash> rdf:type owl:NamedIndividual ,
+                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ,
+                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡功能> ,
+                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡状态> ;
+                                                                                        <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_clsd_his
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_clsd_his> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#客户状态> ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ;
+                                                                                     <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_sts> ;
+                                                                                     <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_dafeng
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_dafeng> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构属性> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行状态> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_deposit
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_deposit> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡功能> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡状态> ;
+                                                                                    owl:differentFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_purchase> ,
+                                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_transfer> ,
+                                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_withdrw> ;
+                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_etc
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_etc> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ,
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡功能> ,
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡状态> ;
+                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_inter_card
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_inter_card> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡分类> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡状态> ;
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_mob_bank
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_mob_bank> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡功能> ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡状态> ;
+                                                                                     <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_purchase
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_purchase> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡功能> ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡状态> ;
+                                                                                     owl:differentFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_transfer> ,
+                                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_withdrw> ;
+                                                                                     <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_transfer
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_transfer> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡功能> ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡状态> ;
+                                                                                     owl:differentFrom <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_withdrw> ;
+                                                                                     <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_withdrw
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#is_withdrw> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡功能> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡状态> ;
+                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> ;
+                                                                                    rdfs:comment "是否开通取现功能" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#issue_mode
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#issue_mode> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#地点类> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#行为渠道> ;
+                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#issue_mode_name
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#issue_mode_name> rdf:type owl:NamedIndividual ,
+                                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> ,
+                                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#渠道名称> ;
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#last_tran_dt
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#last_tran_dt> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#发生日期> ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#最后一次时间> ;
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#latitude
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#latitude> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#地址> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#地点类> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legal_cert
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legal_cert> rdf:type owl:NamedIndividual ;
+                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legal_idnum
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legal_idnum> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证件号码> ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证号> ;
+                                                                                     <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legal_name> ;
+                                                                                     <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legal_mob_phone
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legal_mob_phone> rdf:type owl:NamedIndividual ,
+                                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#手机号码> ;
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legal_idnum> ;
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legal_name
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#legal_name> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#人名称> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#负责人名称> ;
+                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#longitude
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#longitude> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#地址> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#地点类> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mge_org
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mge_org> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                          <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构代号> ,
+                                                                                          <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构号码> ;
+                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mge_org_name
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mge_org_name> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#单位名称> ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构名称> ;
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mgr_name
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mgr_name> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#人名称> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#管户人名称> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mgr_no
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mgr_no> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#工号> ,
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证件号码> ;
+                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mgr_name> ;
+                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mob_bank_date
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mob_bank_date> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#功能日期> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#起始日期> ;
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mob_phone
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#mob_phone> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#手机号码> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_name> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> ,
+                                                                                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> ,
+                                                                                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> ,
+                                                                                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#online_loan_bal
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#online_loan_bal> rdf:type owl:NamedIndividual ,
+                                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ,
+                                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#贷款额度> ;
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#open_date
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#open_date> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#开卡日期> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#起始日期> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#acct_no> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> ,
+                                                                                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#open_teller_no
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#open_teller_no> rdf:type owl:NamedIndividual ,
+                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#工号> ,
+                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证件号码> ;
+                                                                                        <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#over_draft
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#over_draft> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#透支数额> ;
+                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#owner_cert_no
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#owner_cert_no> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证件号码> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证号> ;
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#owner_name> ;
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#owner_name
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#owner_name> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#人名称> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#车主名称> ;
+                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#etc_acct> ;
+                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#owner_phone
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#owner_phone> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#手机号码> ;
+                                                                                     <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#owner_name> ;
+                                                                                     <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#prod_code
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#prod_code> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#产品代码> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> ;
+                                                                                   rdfs:comment "产品代码" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#prod_name
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#prod_name> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#产品名称> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> ;
+                                                                                   rdfs:comment "产品名称" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#real_amt
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#real_amt> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易金额> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_name
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_name> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#人名称> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#推荐人名称> ;
+                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> ,
+                                                                                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_no
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_no> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#工号> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证件号码> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_name> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_org
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_org> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构代号> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构号码> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_org_name> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_org_name
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_org_name> rdf:type owl:NamedIndividual ,
+                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#单位名称> ,
+                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> ,
+                                                                                                 <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构名称> ;
+                                                                                        <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_phone
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_phone> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#手机号码> ;
+                                                                                     <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#recom_no> ;
+                                                                                     <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#seats
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#seats> rdf:type owl:NamedIndividual ;
+                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_no> ;
+                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_abbreviation
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_abbreviation> rdf:type owl:NamedIndividual ,
+                                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> ,
+                                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#商店名称> ,
+                                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构名称> ;
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_add
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_add> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#地址> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#地点类> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_name
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_name> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#名称类> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#商店名称> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构名称> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_reg_date
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_reg_date> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#发生日期> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#注册日期> ;
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_sts> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#商户状态> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构属性> ,
+                                                                                           <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_type
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#shop_type> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#商户状态> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构属性> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#sign_date
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#sign_date> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#绑定日期> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#起始日期> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#status
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#status> rdf:type owl:NamedIndividual ,
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#状态类> ,
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡功能> ,
+                                                                                         <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#银行卡状态> ;
+                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_amt_fen
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_amt_fen> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易金额> ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ;
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_amt_mth
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_amt_mth> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易金额> ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ;
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_amt_year
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_amt_year> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易金额> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#数额类> ;
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_cnt_mth
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_cnt_mth> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易笔数> ,
+                                                                                               <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易类> ;
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_cnt_year
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_cnt_year> rdf:type owl:NamedIndividual ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易笔数> ,
+                                                                                                <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易类> ;
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_date
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_date> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易日期> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#发生日期> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_place
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_place> rdf:type owl:NamedIndividual ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#地点类> ,
+                                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#路程> ;
+                                                                                    <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> ;
+                                                                                    rdfs:comment "通行路程" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_time
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#tran_time> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#交易日期> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#发生日期> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#时间类> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#uid
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#uid> rdf:type owl:NamedIndividual ,
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证件号码> ,
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证号> ;
+                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#cust_name> ;
+                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> ,
+                                                                                                                                                          <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_djk_info> ,
+                                                                                                                                                          <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> ,
+                                                                                                                                                          <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_grwy_info> ,
+                                                                                                                                                          <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_tr_etc_mx> ;
+                                                                             <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#等同于> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#user_code> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#uid_shop
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#uid_shop> rdf:type owl:NamedIndividual ;
+                                                                                  <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> ;
+                                                                                  rdfs:comment "别名uid 商户码" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#user_code
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#user_code> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证件号码> ,
+                                                                                            <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#证号> ;
+                                                                                   <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#vehicle_type
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#vehicle_type> rdf:type owl:NamedIndividual ;
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#依赖信息> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#car_no> ;
+                                                                                      <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_v_as_etc_info> .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#xtly
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#xtly> rdf:type owl:NamedIndividual ;
+                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dkqbqx> ;
+                                                                              rdfs:comment "系统来源" .
+
+
+###  http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#yyzz
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#yyzz> rdf:type owl:NamedIndividual ,
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#号码类> ,
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构号码> ,
+                                                                                       <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#机构证号> ;
+                                                                              <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#在表内> <http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#dm_hlw_shop_info> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.semanticweb.org/13257/ontologies/2023/6/untitled-ontology-2#专有用途> rdfs:comment "暂时没用" .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
